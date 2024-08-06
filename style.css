@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  color: inherit;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 70%;
+  border: 3px solid orange;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+
+  flex-direction: column;
+  padding: 1.5rem 0;
+  margin: auto;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(47, 47, 47, 0.693), rgba(3, 3, 3, 0.447)),
+    url("https://upload.wikimedia.org/wikipedia/en/thumb/5/50/UM-Mdy_Logo.svg/270px-UM-Mdy_Logo.svg.png")
+      no-repeat center center / contain;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+}
+
+header {
+  text-transform: uppercase;
+  color: orange;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin: 0.5rem 1rem 1rem;
+}
+
+.icon {
+  width: 100px;
+}
+
+main {
+  color: #fff;
+  flex-direction: column;
+}
+
+form {
+  width: 70%;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  line-height: 2;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+input {
+  width: max-content;
+  font-size: inherit;
+  font-weight: bold;
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #777;
+  text-align: center;
+}
+
+input:first-child {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: auto;
+
+  display: block;
+}
+
+input:last-child {
+  border: none;
+}
+
+input:focus,
+input:active {
+  outline: none;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.signature {
+  width: 60%;
+  justify-content: space-between;
+}
+
+input#sign {
+  font-size: inherit;
+  margin-bottom: 10px;
+}
